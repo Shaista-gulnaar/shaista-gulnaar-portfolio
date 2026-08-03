@@ -127,7 +127,7 @@ export default function Contact() {
                 link.href = 'https://drive.google.com/uc?export=download&id=1ngPCz-ouGofjIBnTVhpQ2WHV0ioMWtpw';
                 link.click();
               }}
-            }
+            //}
             >
               Download Resume →
             </button>
