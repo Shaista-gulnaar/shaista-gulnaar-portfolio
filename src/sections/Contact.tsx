@@ -110,7 +110,7 @@ export default function Contact() {
             <button
               className="btn-tertiary"
               style={{ alignSelf: 'center' }}
-              onClick={() => {
+              /*onClick={() => {
                 fetch('https://drive.google.com/uc?export=download&id=1ngPCz-ouGofjIBnTVhpQ2WHV0ioMWtpw')
                   .then((res) => res.blob())
                   .then((blob) => {
@@ -121,7 +121,13 @@ export default function Contact() {
                     a.click();
                     URL.revokeObjectURL(url);
                   });
+              } */ 
+            onClick={() => {
+                const link = document.createElement('a');
+                link.href = 'https://drive.google.com/uc?export=download&id=1ngPCz-ouGofjIBnTVhpQ2WHV0ioMWtpw';
+                link.click();
               }}
+            }
             >
               Download Resume →
             </button>
